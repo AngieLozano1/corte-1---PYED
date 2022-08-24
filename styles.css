@@ -92,3 +92,109 @@ p {
     display: flex;
     justify-content:center ;
 }
+
+.cuadro{
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid red; */
+    /* background-color: black; */
+    background-image: radial-gradient(rgba(255, 0, 0, 0.486),rgba(255, 255, 0, 0.5)),url("./img.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+.cuadro2{
+    width: 100%;
+    height: 1500px;
+    background-image: linear-gradient(120deg, rgba(255, 0, 0, 0.486),rgba(255, 255, 0, 0.5), rgba(22, 175, 150, 0.432), rgba(255, 68, 0, 0.493)),url("./img.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.cuadro3{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    animation-name: mi_animacion; 
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mi_animacion{
+    0%{background-color: rgba(255, 0, 0, 0.5);}
+    20%{background-color: rgba(0, 0, 255, 0.5);}
+    50%{background-color:rgba(46, 139, 86, 0.514);
+        transform: translate(1500px) rotate(1800deg) scale(2)}
+    100%{transform: translate(-100px) rotate(-1800deg) }
+}
+
+.cuadroa{
+    width: 500px;
+    height: 500px;
+    background-image: url("./giphy__8_.gif");
+    animation-name: animacion;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion{
+    0%{transform: translate(500px) }
+    20%{transform: translate(200px,-500px) }
+    50%{transform: translate(-500px) }
+    100%{transform: translate(0px,100px) scale(1.5) }
+}
+
+.cuadroi{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.cuadroii{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    border: 2px solid black;
+    box-sizing: content-box;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: yellowgreen;
+    border: 2px solid yellowgreen;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    box-shadow: 4px 3px 10px rgb(116, 107, 107);
+}
+
+.material-icons{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 22px;
+    right: 11px;
+    color: white;
+    
+}
